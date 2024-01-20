@@ -11,12 +11,38 @@
         }
 
         body {
-            font: 16px/1.5 Inter, -system-ui, sans-serif;
+            font: 16px/1.5 Inter, system-ui, sans-serif;
+        }
+
+        @media screen and (min-width: 36em) {
+            .container {
+                margin: 0 auto;
+                width: 32em;
+            }
+        }
+
+        @media screen and (min-width: 64em) {
+            .container {
+                margin: 0 auto;
+                width: 48em;
+            }
+        }
+
+        button {
+            background: #168967;
+            color: #fff;
+            padding: .5em 1em;
+            border: 0;
+            cursor: pointer;
+            font: inherit;
+            font-weight: 700;
         }
     </style>
 </head>
 
 <body>
+
+    <div class="container">
     <img src="assets/logo.svg" alt="Ponovo">
 
     <p>
@@ -39,8 +65,7 @@
     </p>
     <p>
         <b>Боримо се за право на поправку и подржавамо одраст</b>, и радимо на еманципацији маса по питању ових идеја.
-        Агитујемо да ове идеје постану регулаторне и обавезне, због будућности наше планете, у којој ћемо ми живети у
-        здрављу и берићету.
+        Агитујемо да ове идеје постану регулаторне и обавезне, због будућности наше планете на којој ћемо живети здрави и берићетни.
 
         Наш крајњи циљ је да развијемо, документујемо и објавимо поновљиве моделе и стандарде да спречимо настанак
         е-отпада, и омогућимо прављење модуларних, одрживих и поправљивих уређаја.
@@ -51,8 +76,10 @@
     </p>
 
     <p><b>Како ви можете да помогнете?</b></p>
-    <p><b>Донирајте Поново / Ponovo пројекту</b> на <a href="https://opencollective.com/ponovo">нашој OpenCollective страници</a> и добићете прве вести о нашем напретку.</p>
+   
+    <p><a href="https://opencollective.com/ponovo" target="_blank"><button>Донирајте пројекту Поново</button></a> и добићете прве вести о нашем напретку.</p>
 
+</div>
     <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
     (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
